@@ -1,0 +1,29 @@
+{
+  "name": "equitron",
+  "version": "1.0.0",
+  "description": "test task for studio presto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "echo 'Hello world!' && npm run test",
+    "lint": "sass-lint -v",
+    "lint:fix": "sass-lint-auto-fix",
+    "deploy": "gh-pages -d dist",
+    "start": "gulp"
+  },
+  "author": "Oleksandr Dzhyhan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "browserslist": "^4.16.3",
+    "caniuse-lite": "^1.0.30001192",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-nunjucks": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1"
+  }
+}
