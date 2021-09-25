@@ -1,0 +1,17 @@
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+} 
+
+@mixin fwfslh ($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+} 
+
+@mixin fwfslhls ($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
