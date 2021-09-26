@@ -15,7 +15,6 @@ body {
 
 .top-btm-container {
   @include container(1440px);
-  height: 100%;
 }
 
 .contact-form {
@@ -34,7 +33,7 @@ body {
 
   &__input-group {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   &__input {
@@ -115,13 +114,14 @@ body {
     border-bottom: 1px solid #000000;
     padding-left: 0;
     padding-bottom: 7px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   &__text {
     font-family: $ffa;
     @include fwfslhls(500, 11px, 15px, 0.05em);
     color: $grey;
+    padding-top: 25px;
   }
 
   &__button {
@@ -149,7 +149,4 @@ body {
   }
 } 
 
-.top-wrapper, html, body {
-  height: 100%
-}
 @import 'header';

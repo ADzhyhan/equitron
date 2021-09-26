@@ -5,9 +5,19 @@
   background-size: cover;
   background-position: center;
 
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__inner {
-    height: 130px; 
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  &__header-wrapper {
     width: 100%;
+    height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,9 +66,9 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  flex-direction: column;
-  align-content: center;
-
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+  flex: 1;
 }
 
 .top-content {
@@ -78,13 +88,13 @@
     font-family: $ffp-black;
     @include fwfslh(900, 30px, 36px);
     color: #fff;
+    padding-right: 7px;
   } 
 
   &__title {
     font-family: $ffp-black;
     @include fwfslh(900, 90px, 108px);
     color: #fff; 
-    padding: 33px 0px 33px 0px;
   }
 
   &__text {
@@ -96,7 +106,27 @@
 } 
 
 .benefits {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 110px;
 
+  &-item {
+    width: 12%;
+
+    &__number {
+      font-family: $ffp-black;
+      @include fwfslh(900, 30px, 36px);
+      color: #fff;
+      padding-bottom: 10px;
+    }
+
+    &__text {
+      font-family: $ffa;
+      @include fwfslh(500, 18px, 25px);
+      color: #fff;
+    }
+  }
 }
 
 .small-num {
