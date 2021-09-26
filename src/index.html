@@ -57,61 +57,85 @@
           </ul>
         </div>
 
-        <div class="top-content">
-          <div class="content">
-            <h3 class="content__date">
-              01
-              <h6 class="content__date small-num">/03</h6>
-            </h3>
-
-            <h1 class="content__title">
-              High Energy 
-              Cell Treatment
-            </h1>
-
-            <p class="content__text">
-              Anhand einer umfassenden Studie gemeinsam mit Prof. Dr. Andreas Traweger vom Institut für
-              Sehnen- und Knochenregeneration an der Paracelsus Medizinischen Privatuniversität
-              in Salzburg konnten. 
-            </p> 
-
-            <div class="benefits">
-              <div class="benefits-item">
-                <h3 class="benefits-item__number">500</h3>
-                <h6 class="benefits-item__text">
-                  zufriedener 
-                  Kunde
-                </h6>
+        <div class="top-wrapper">
+          <div class="top-content">
+            <div class="content">
+              <div class="content__date-wrapper">
+                <h3 class="content__date">
+                  01
+                </h3>
+                <span class="content__date small-num">/03</span>
               </div>
-              <div class="benefits-item">
-                <h3 class="benefits-item__number">2</h3>
-                <h6 class="benefits-item__text">
-                  Jahre 
-                  Garantie
-
-                </h6>
-              </div>
-              <div class="benefits-item">
-                <h3 class="benefits-item__number">800+</h3>
-                <h6 class="benefits-item__text">
-                  positives 
-                  Feedback
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <form action="#" class="contact-form top-form">
-            <div class="contact-form__wrapper">
-              <h1 class="contact-form__title">
-                Erfahren Sie mehr
+  
+              <h1 class="content__title">
+                High Energy 
+                Cell Treatment
               </h1>
-              <button class="contact-form__button">Kontakt</button>
-              <p class="contact-form__text">
-                Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
-              </p>
+  
+              <p class="content__text">
+                Anhand einer umfassenden Studie gemeinsam mit Prof. Dr. Andreas Traweger vom Institut für
+                Sehnen- und Knochenregeneration an der Paracelsus Medizinischen Privatuniversität
+                in Salzburg konnten. 
+              </p> 
+  
+              <div class="benefits">
+                <div class="benefits-item">
+                  <h3 class="benefits-item__number">500</h3>
+                  <h6 class="benefits-item__text">
+                    zufriedener 
+                    Kunde
+                  </h6>
+                </div>
+                <div class="benefits-item">
+                  <h3 class="benefits-item__number">2</h3>
+                  <h6 class="benefits-item__text">
+                    Jahre 
+                    Garantie
+  
+                  </h6>
+                </div>
+                <div class="benefits-item">
+                  <h3 class="benefits-item__number">800+</h3>
+                  <h6 class="benefits-item__text">
+                    positives 
+                    Feedback
+                  </h6>
+                </div>
+              </div>
             </div>
-          </form>
+  
+            <form action="#" class="contact-form top-form">
+              <div class="contact-form__wrapper">
+                <h1 class="contact-form__title">
+                  Erfahren Sie mehr
+                </h1>
+                <div class="contact-form__input-group">
+                  <input id="name" type="text" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="name">Name</label>
+                </div>
+                <div class="contact-form__input-group">
+                  <input id="email" type="email" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="email">Email</label>
+                </div>
+                <select class="contact-form__select">
+                  <option selected>Ich interessiere mich als</option>
+                  <option value="first">111</option>
+                  <option value="second">222</option>
+                </select>
+                <div class="contact-form__input-group">
+                  <input id="interes" type="text" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+                </div>
+                <button class="contact-form__button">Kontakt</button>
+                <p class="contact-form__text">
+                  Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -354,11 +378,31 @@
             </h4>
         </div>
 
-        <form action="#" class="contact-form bottom-form">
+        <form action="#" class="contact-form top-form">
           <div class="contact-form__wrapper">
             <h1 class="contact-form__title">
               Erfahren Sie mehr
             </h1>
+            <div class="contact-form__input-group">
+              <input id="name" type="text" class="contact-form__input" required>
+              <span class="contact-form__bar"></span>
+              <label class="contact-form__label" for="name">Name</label>
+            </div>
+            <div class="contact-form__input-group">
+              <input id="email" type="email" class="contact-form__input" required>
+              <span class="contact-form__bar"></span>
+              <label class="contact-form__label" for="email">Email</label>
+            </div>
+            <select class="contact-form__select">
+              <option selected>Ich interessiere mich als</option>
+              <option value="first">111</option>
+              <option value="second">222</option>
+            </select>
+            <div class="contact-form__input-group">
+              <input id="interes" type="text" class="contact-form__input" required>
+              <span class="contact-form__bar"></span>
+              <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+            </div>
             <button class="contact-form__button">Kontakt</button>
             <p class="contact-form__text">
               Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
@@ -369,10 +413,10 @@
     </section>
 
     <footer class="footer">
-      <div class="main-container">
+      <div class="top-btm-container">
         <div class="footer__inner">
           <a class="logo" href="#">
-            <img class="logo__img" src="" alt="logo">
+            <img class="logo__img" src="./img/logo.svg" alt="logo">
           </a>
 
           <nav class="navigation">
@@ -421,5 +465,7 @@
         </div>
       </div>
     </footer>
+
+
   </body>
 </html>

@@ -15,3 +15,8 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin container($size) {
+  max-width: $size;
+  margin: 0 auto;
+}

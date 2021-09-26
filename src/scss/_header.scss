@@ -1,0 +1,111 @@
+.header {
+  height: 100vh;
+  background-image: url('../img/top-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    height: 130px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+} 
+
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      padding-right: 45px;
+    }
+
+    &-item + &-item:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    font-family: $ffa;
+    @include fwfslh(500, 18px, 25px); 
+    text-transform: uppercase;
+    color:#fff;
+  }
+} 
+
+.social {
+  display: flex;
+
+  &__link {
+    color: #fff;
+  }
+
+  &__item {
+    padding-right: 30px;
+  }
+
+  &__link + &__link:last-child {
+    padding-right: 0;
+  }
+}   
+
+.top-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+.top-content {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 46%;
+
+  &__date-wrapper {
+    display: flex;
+  }
+
+  &__date {
+    font-family: $ffp-black;
+    @include fwfslh(900, 30px, 36px);
+    color: #fff;
+  } 
+
+  &__title {
+    font-family: $ffp-black;
+    @include fwfslh(900, 90px, 108px);
+    color: #fff; 
+    padding: 33px 0px 33px 0px;
+  }
+
+  &__text {
+    font-family: $ffa; 
+    @include fwfslh(500, 18px, 25px);
+    color: #fff;
+    margin-top: 35px;
+  }
+} 
+
+.benefits {
+
+}
+
+.small-num {
+  font-family: $ffp-bold;
+  @include fwfslh(500, 14px, 22px);
+  padding-left: 7;
+} 
+
+.top-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+}
