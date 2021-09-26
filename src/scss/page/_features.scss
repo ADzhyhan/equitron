@@ -2,9 +2,50 @@
   padding-top: 157px;
 } 
 
+.icon-eye {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background: #fff;
+  color: $blue;
+  text-align: center;
+  line-height: 46px;
+  font-size: 25px;
+  transition: .2s all;
+
+  &:hover {
+    cursor: pointer;
+    background: $blue;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
 .product {
   display: flex;
   justify-content: space-between;
+
+  &__item {
+    position: relative;
+
+    .eye1 {
+      position: absolute;
+      top: 121px;
+      left: 203px;
+    }
+
+    .eye2 {
+      position: absolute;
+      top: 269px;
+      left: 256px;
+    }
+
+    .eye3 {
+      position: absolute;
+      top: 458px;
+      left: 471px;
+    }
+  }
 
   &__card {
     width: 34%;
