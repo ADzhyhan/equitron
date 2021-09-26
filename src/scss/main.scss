@@ -17,6 +17,10 @@ body {
   @include container(1440px);
 }
 
+.main-container {
+  @include container(1196px);
+}
+
 .contact-form {
   width: 100%;
   max-width: 461px;
@@ -149,4 +153,46 @@ body {
   }
 } 
 
-@import 'header';
+.section {
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 37px;
+
+    &-titles {
+      width: 40%;
+    }
+
+    &-text {
+      width: 34%;
+    }
+  } 
+
+  &__title {
+    font-family: $ffp-black;
+    @include fwfslh(900, 70px, 84px);
+    color: $blue;
+    padding-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-family: $ffp-black; 
+    @include fwfslhls(900, 22px, 27px, 0.02em);
+    color: $blue;
+  }
+
+  &__text {
+    font-family: $ffa;
+    @include fwfslhls(500, 16px, 27px, 0.02em);
+    color: $black; 
+    padding-bottom: 30px;
+  }
+
+  &__text + &__text:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@import 'page/header';
+@import 'page/features';

@@ -1,0 +1,51 @@
+.features {
+  padding-top: 157px;
+} 
+
+.product {
+  display: flex;
+  justify-content: space-between;
+
+  &__card {
+    width: 34%;
+    height: min-content;
+    background: $light-blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+
+    &-img {
+      padding-left: 100px;
+    }
+
+    &-description {
+      width: 43%;
+      text-align: center;
+    }
+
+    &-title {
+      font-family: $ffp-black;
+      @include fwfslhls(900, 16px, 19px, 0.05em); 
+      color: $blue;
+      text-transform: uppercase;
+      padding-bottom: 35px;
+    }
+
+    &-text {
+      font-family: $ffa;
+      @include fwfslh(500, 16px, 22px); 
+      color: $black;
+      padding-bottom: 35px;
+    } 
+
+    &-text + &-text:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.text-italic {
+  font-style: italic;
+}
