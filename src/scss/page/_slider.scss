@@ -1,0 +1,44 @@
+.slider {
+  padding: 250px 0px 200px 0px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 32%;
+  }
+
+  &__title {
+    font-family: $ffp-black; 
+    @include fwfslhls(900, 70px, 78px, 0.02em);
+    color: $blue;
+  }
+
+  &__item {
+    width: 51%;
+
+    &-text {
+      font-family: $ffp-black;
+      @include fwfslhls(900, 30px, 36px, 0.02em);
+      color: $black;
+      padding-bottom: 50px;
+    }
+
+    &-name {
+      padding: 18px 0px 5px 0px;
+      font-family: $ffa;
+      @include fwfslhls(900, 22px, 30px, 0.02em); 
+      color: #000;
+    }
+
+    &-subtext {
+      font-family: $ffa; 
+      @include fwfslhls(500, 18px, 25px, 0.02em);
+      color: #858585;
+      opacity: 0.74;
+    }
+  }
+}
