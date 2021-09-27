@@ -1,0 +1,32 @@
+.anwendungen {
+  padding: 135px 0px 170px 0px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 90px;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 15%;
+    text-align: center;
+
+    &-title {
+      padding: 25px 0px 25px 0px;
+      font-family: $ffp-black;
+      @include fwfslhls(900, 16px, 19px, 0.02em);
+      color: $blue;
+    }
+
+    &-text {
+      font-family: $ffa;
+      @include fwfslh(500, 16px, 22px);
+      color: $black;
+    }
+  }
+}

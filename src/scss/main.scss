@@ -19,6 +19,11 @@ body {
 
 .main-container {
   @include container(1196px);
+} 
+
+.blue-container {
+  @include container(1626px);
+  background: $light-blue;
 }
 
 .contact-form {
@@ -195,4 +200,5 @@ body {
 }
 
 @import 'page/header';
-@import 'page/features';
+@import 'page/features'; 
+@import 'page/anwendugen';
