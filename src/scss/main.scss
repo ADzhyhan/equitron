@@ -26,6 +26,28 @@ body {
   background: $light-blue;
 }
 
+.button {
+  height: 44px;
+  width: 48%;
+  text-align: center;
+  background: #0376C4;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: $ffa;
+  @include fwfslh(900, 14px, 19px);
+  text-transform: uppercase;  
+  transition: .3s all;
+  
+  &:hover {
+    background: #0b67a5;
+    cursor: pointer;
+  }
+  &:active {
+    background: #084d7a;
+  }
+}
+
 .contact-form {
   width: 100%;
   max-width: 461px;
@@ -132,30 +154,6 @@ body {
     color: $grey;
     padding-top: 25px;
   }
-
-  &__button {
-    height: 44px;
-    width: 48%;
-    text-align: center;
-    background: #0376C4;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-
-    font-family: $ffa;
-    @include fwfslh(900, 14px, 19px);
-    text-transform: uppercase;  
-    transition: .3s all;
-    
-    &:hover {
-      background: #0b67a5;
-      cursor: pointer;
-    }
-
-    &:active {
-      background: #084d7a;
-    }
-  }
 } 
 
 .section {
@@ -178,7 +176,7 @@ body {
     font-family: $ffp-black;
     @include fwfslh(900, 70px, 84px);
     color: $blue;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
   }
 
   &__subtitle {
@@ -203,3 +201,4 @@ body {
 @import 'page/features'; 
 @import 'page/anwendugen'; 
 @import 'page/technologie';
+@import 'page/produkte';

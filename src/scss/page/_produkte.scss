@@ -1,0 +1,61 @@
+.produkte {
+  padding-top: 160px;
+  background: url('../img/big-ellipse.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left;
+  background-position-y: bottom;
+
+  &__info {
+    position: relative;
+  }
+
+  &__section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__section + &__section:last-child {
+    padding-bottom: 22px;
+  }
+
+  &__title {
+    font-family: $ffp-black;
+    @include fwfslh(900, 30px, 18px);
+    color: $blue;
+  }
+
+  &__list {
+    padding: 40px 0px 42px 0px;
+    list-style: inherit;
+    text-transform: lowercase;
+    padding-left: 15px;
+
+    &-item {
+      padding-bottom: 20px;
+      font-family: $ffa;
+      @include fwfslh(900, 18px, 18px)
+    }
+    &-item + &-item:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  width: 455px;
+  top: 6px; 
+  right: 361px;
+}
+
+.line-rev {
+  position: absolute;
+  width: 380px;
+  top: 77px;
+  left: 310px;
+  transform: scale(-1, 1);
+}
