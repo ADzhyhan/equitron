@@ -1,0 +1,84 @@
+.technologie-horse {
+  padding-top: 150px;
+
+
+}
+
+.horse {
+  max-width: 1920px;
+  min-height: 1141px;
+  background-image: url('../img/horse.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-dots {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 1141px;
+
+    &__circle {
+      width: 48px;
+      height: 48px;
+      background-color: $blue;
+      color: #fff;
+      border-radius: 50%;
+
+      font-family: $ffp-black;
+      @include fwfslhls(900, 30px, 37px, 0.02em);
+      text-align: center;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}
+
+.dot--1 {
+  position: absolute;
+  top: 245px;
+  left: 245px;
+}
+.dot--2 {
+  position: absolute;
+  top: 378px;
+  left: 353px;
+}
+.dot--3 {
+  position: absolute;
+  top: 263px;
+  left: 606px;
+}
+.dot--4 {
+  position: absolute;
+  top: 257px;
+  left: 817px;
+}
+.dot--5 {
+  position: absolute;
+  top: 500px;
+  left: 885px;
+}
+.dot--6 {
+  position: absolute;
+  top: 784px;
+  left: 947px;
+}
+.dot--7 {
+  position: absolute;
+  top: 835px;
+  left: 1193px;
+}
+.dot--8 {
+  position: absolute;
+  top: 733px;
+  left: 265px;
+}
+.dot--9 {
+  position: absolute;
+  top: 764px;
+  left: 419px;
+}
