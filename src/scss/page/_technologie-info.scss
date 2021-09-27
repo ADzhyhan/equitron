@@ -1,0 +1,14 @@
+.technologie-info {
+  padding: 111px 0px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 150px;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
