@@ -1,0 +1,39 @@
+.technologie {
+  padding-top: 250px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 50%;
+
+    &-text {
+      font-family: $ffa; 
+      @include fwfslh(500, 18px, 25px);
+
+    }
+  }
+
+  &__img {
+    height: 450px;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 27%;
+    display: flex;
+
+    &-dash {
+      @include fwfslh(bold, 20px, 19px);
+      color: $blue;
+      padding-right: 20px;
+    }
+  }
+}
