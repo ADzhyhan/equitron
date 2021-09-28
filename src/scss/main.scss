@@ -28,8 +28,7 @@ body {
 }
 
 .button {
-  height: 44px;
-  width: 48%;
+  @include wh(48%, 44px);
   text-align: center;
   background: #0376C4;
   border-radius: 5px;
@@ -125,11 +124,9 @@ body {
   &__label {
     font-family: $ffa;
     @include fwfslhls(900, 16px, 22px, 0.05em);
+    @include pos-tl(0px, 0px);
     color: $black;
-    position: absolute;
     pointer-events: none;
-    left: 0px;
-    top: 0px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;

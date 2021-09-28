@@ -1,7 +1,5 @@
 .technologie-horse {
   padding-top: 150px;
-
-
 }
 
 .horse {
@@ -20,8 +18,7 @@
     min-height: 1141px;
 
     &__circle {
-      width: 48px;
-      height: 48px;
+      @include wh(48px, 48px);
       background-color: $blue;
       color: #fff;
       border-radius: 50%;
@@ -29,56 +26,85 @@
       font-family: $ffp-black;
       @include fwfslhls(900, 30px, 37px, 0.02em);
       text-align: center;
+      opacity: 1;
+
+      &-wrapper {
+        @include df-center;
+        border-radius: 50%;
+        @include wh(64px, 64px);
+        transition: .5s all;
+      }
     }
 
     &__text {
-      display: none;
+      color: $blue;
+      font-family: $ffp-black;
+      @include fwfslh(900, 16px, 19px);
+      width: 8.5rem;
+
+      &--1 {
+        @include pos-tr(99px, 78px);
+      }
+    }
+
+    &__content {
+      opacity: 0;
+      transition: .5s all;
+    }
+
+    &__container {
+      &:hover {
+        cursor: pointer;
+        .horse-dots__content{
+          opacity: 1;
+          transition: .5s all;
+        }
+        .horse-dots__circle-wrapper {
+          background-color: rgba(255, 255, 255, 0.18);
+          transition: .5s all;
+        }
+      }
     }
   }
 }
 
+.text-line {
+  font-family: $ffp-black;
+  font-size: 16px;
+  color: $blue;
+
+  &--1 {
+    transform: rotateZ(143deg);
+    position: absolute;
+    top: 72px;
+    right: 23px;
+  }
+}
+
 .dot--1 {
-  position: absolute;
-  top: 245px;
-  left: 245px;
+  @include pos-tl(245px, 245px);
 }
 .dot--2 {
-  position: absolute;
-  top: 378px;
-  left: 353px;
+  @include pos-tl(378px, 353px);
 }
 .dot--3 {
-  position: absolute;
-  top: 263px;
-  left: 606px;
+  @include pos-tl(263px, 606px);
 }
 .dot--4 {
-  position: absolute;
-  top: 257px;
-  left: 817px;
+  @include pos-tr(257px, 336px);
 }
 .dot--5 {
-  position: absolute;
-  top: 500px;
-  left: 885px;
+  @include pos-tr(500px, 255px);
 }
 .dot--6 {
-  position: absolute;
-  top: 784px;
-  left: 947px;
+  @include pos-br(313px, 200px);
 }
 .dot--7 {
-  position: absolute;
-  top: 835px;
-  left: 1193px;
+  @include pos-br(259px, -55px);
 }
 .dot--8 {
-  position: absolute;
-  top: 733px;
-  left: 265px;
+  @include pos-bl(346px, 265px);
 }
 .dot--9 {
-  position: absolute;
-  top: 764px;
-  left: 419px;
+  @include pos-bl(328px, 419px);
 }

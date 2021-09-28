@@ -4,8 +4,7 @@
 } 
 
 .icon-eye {
-  width: 39px;
-  height: 39px;
+  @include wh(39px, 39px);
   border-radius: 50%;
   background: #fff;
   color: $blue;
