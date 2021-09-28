@@ -50,6 +50,13 @@ display: inline-block;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Nexa-Book';
+	src: url('..f/onts/Nexa-Book.eot');
+	src: local('☺'), url('../fonts/Nexa-Book.woff') format('woff'), url('../fonts/Nexa-Book.ttf') format('truetype'), url('../fonts/Nexa-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .icon-right-arrow:before{content:'\0041';}
 .icon-link:before{content:'\0042';}
