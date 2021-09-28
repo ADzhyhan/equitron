@@ -176,6 +176,7 @@ body {
     font-family: $ffp-black;
     @include fwfslh(900, 70px, 84px);
     color: $blue;
+    text-transform: capitalize;
     // padding-bottom: 20px;
   }
 
@@ -204,4 +205,5 @@ body {
 @import 'page/produkte';
 @import 'page/technologie-horse';
 @import 'page/slider';
-@import 'page/technologie-info'
+@import 'page/technologie-info';
+@import 'page/kontakt';

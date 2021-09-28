@@ -1,0 +1,24 @@
+.kontaktiere {
+  padding-top: 150px;
+  background-image: url('../img/bottom-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-width: 1920px;
+  min-height: 990px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__block {
+    width: 50%;
+    padding-top: 80px;
+  }
+}
+
+.bottom-form {
+  background-color: $light-blue;
+}
