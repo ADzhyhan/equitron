@@ -1,21 +1,44 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass')(require('sass'));
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create(); 
 
 function style() {
   return gulp.src('./src/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
       cascade: false
     }))
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
+}
+
+function libscss() {
+  return gulp.src([
+    'node_modules/slick-carousel/slick/slick.css',
+  ])
+    .pipe(concat('_libs.scss'))
+    .pipe(gulp.dest('src/scss'))
+    .pipe(browserSync.reload({stream: true}))
+}
+
+function libsjs() {
+  return gulp.src([
+    'node_modules/slick-carousel/slick/slick.js'
+  ])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload({stream: true}))
 }
 
 function html() {
@@ -45,6 +68,8 @@ async function build() {
   await html();
   await font();
   await script();
+  await libscss();
+  await libsjs();
 }
 
 function watch() {
@@ -64,6 +89,8 @@ function watch() {
 exports.style = style;
 exports.html = html;
 exports.font = font;
+exports.libscss = libscss; 
+exports.libsjs = libsjs;
 exports.image = image;
 exports.script = script;
 exports.build = build;

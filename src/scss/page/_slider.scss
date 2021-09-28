@@ -17,8 +17,38 @@
     color: $blue;
   }
 
-  &__item {
+  &__slider-block {
     width: 51%;
+  }
+
+  &__arrows {
+    padding-top: 50px;
+    display: flex;
+  }
+
+  &__arrow {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 40px;
+    color: #000;
+    border-radius: 50%;
+    transition: .3s all;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $blue;
+      color: #fff;
+    }
+
+    &:active {
+      background: #084d7a;
+    }
+  }
+
+  &__item {
 
     &-text {
       font-family: $ffp-black;
@@ -41,4 +71,8 @@
       opacity: 0.74;
     }
   }
+}
+
+.icon-left-arrow {
+margin-right: 30px;
 }

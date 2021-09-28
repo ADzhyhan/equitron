@@ -2,6 +2,8 @@ const eye1 = document.querySelector('.eye1');
 const eye2 = document.querySelector('.eye2');
 const eye3 = document.querySelector('.eye3'); 
 const cardWrapper = document.querySelector('.product__card-wrapper');
+const nextArrow = document.querySelector('.icon-right-arrow');
+const prevArrow = document.querySelector('.icon-left-arrow');
 
 const card =
 `
@@ -39,4 +41,12 @@ eye3.addEventListener('mouseover', (e) => {
 })
 eye3.addEventListener('mouseout', (e) => {
   cardWrapper.innerHTML = ''; 
+}) 
+
+$(function(){
+  $('.slider__slider-block').slick({
+    infinite: true,
+    nextArrow: nextArrow, 
+    prevArrow: prevArrow
+  })
 })
