@@ -27,6 +27,23 @@ body {
   background: $light-blue;
 }
 
+@media (max-width: 1196px) {
+  .main-container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    max-width: none;
+  }
+}
 .button {
   @include wh(48%, 44px);
   text-align: center;
