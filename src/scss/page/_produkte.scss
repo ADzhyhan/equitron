@@ -44,16 +44,12 @@
 }
 
 .line {
-  position: absolute;
+  @include pos-tr(6px, 361px);
   width: 455px;
-  top: 6px; 
-  right: 361px;
 }
 
 .line-rev {
-  position: absolute;
+  @include pos-tl(77px, 310px);
   width: 380px;
-  top: 77px;
-  left: 310px;
   transform: scale(-1, 1);
 }

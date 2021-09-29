@@ -16,8 +16,7 @@
   }
 
   &__header-wrapper {
-    width: 100%;
-    height: 130px;
+    @include wh(100%, 130px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,9 +62,7 @@
 }   
 
 .top-wrapper {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
+  @include center;
   -webkit-box-flex: 1;
   box-sizing: border-box;
   flex: 1;
