@@ -44,6 +44,39 @@
 
       &--1 {
         @include pos-tr(99px, 78px);
+
+      }
+
+      &--2 {
+        @include pos-tr(103px, 136px);
+      }
+    
+      &--3 {
+        @include pos-tl(-150px, -94px);
+      }
+    
+      &--4 {
+        @include pos-tl(-144px, 58px);
+      }
+    
+      &--5 {
+        @include pos-tr(126px, 63px);
+      }
+    
+      &--6 {
+        @include pos-tr(0px, 159px);
+      }
+    
+      &--7 {
+        @include pos-tr(97px, 87px);
+      }
+    
+      &--8 {
+        @include pos-br(61px, 138px);
+      }
+    
+      &--9 {
+        @include pos-tl(-146px, 38px);
       }
     }
 
@@ -74,10 +107,39 @@
   color: $blue;
 
   &--1 {
-    transform: rotateZ(143deg);
-    position: absolute;
-    top: 72px;
-    right: 23px;
+    @include pos-line-tr(143deg, 72px, 23px);
+  }
+
+  &--2 {
+    @include pos-line-tr(-27deg, 67px, 43px);
+  }
+
+  &--3 {
+    @include pos-line-tr(61deg, -51px, 2px);
+  }
+
+  &--4 {
+    @include pos-line-bl(122deg, 90px, 18px);
+  }
+
+  &--5 {
+    @include pos-line-tr(-50deg, 83px, 29px);
+  }
+
+  &--6 {
+    @include pos-line-tr(0deg, 21px, 54px);
+  }
+
+  &--7 {
+    @include pos-line-tr(-35deg, 64px, 43px);
+  }
+
+  &--8 {
+    @include pos-line-tr(17deg, 0px, 52px);
+  }
+
+  &--9 {
+    @include pos-line-tl(-70deg, -43px, 6px);
   }
 }
 
@@ -88,23 +150,23 @@
   @include pos-tl(378px, 353px);
 }
 .dot--3 {
-  @include pos-tl(263px, 606px);
+  @include pos-tl(265px, 606px);
 }
 .dot--4 {
-  @include pos-tr(257px, 336px);
+  @include pos-tr(249px, 324px);
 }
 .dot--5 {
-  @include pos-tr(500px, 255px);
+  @include pos-tr(492px, 255px);
 }
 .dot--6 {
-  @include pos-br(313px, 200px);
+  @include pos-br(310px, 191px);
 }
 .dot--7 {
-  @include pos-br(259px, -55px);
+  @include pos-br(255px, -58px);
 }
 .dot--8 {
-  @include pos-bl(346px, 265px);
+  @include pos-bl(358px, 262px);
 }
 .dot--9 {
-  @include pos-bl(328px, 419px);
+  @include pos-bl(325px, 404px);
 }

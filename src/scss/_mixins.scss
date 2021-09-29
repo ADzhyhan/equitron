@@ -22,16 +22,23 @@
 }
 
 @mixin pos-line-tr($rotate, $top, $right) {
-  transform: rotate($rotate);
+  transform: rotateZ($rotate);
   position: absolute;
   top: $top;
   right: $right;
 }
 
 @mixin pos-line-tl($rotate, $top, $left) {
-  transform: rotate($rotate);
+  transform: rotateZ($rotate);
   position: absolute;
   top: $top;
+  left: $left;
+}
+
+@mixin pos-line-bl($rotate, $bottom, $left) {
+  transform: rotateZ($rotate);
+  position: absolute;
+  bottom: $bottom;
   left: $left;
 }
 
