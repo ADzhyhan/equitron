@@ -28,7 +28,7 @@
 
   &__arrow {
     @include wh(64px, 64px);
-    @include center;
+    @include df-center;
     font-size: 40px;
     color: #000;
     border-radius: 50%;

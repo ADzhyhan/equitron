@@ -62,7 +62,7 @@
 }   
 
 .top-wrapper {
-  @include center;
+  @include df-center;
   -webkit-box-flex: 1;
   box-sizing: border-box;
   flex: 1;
