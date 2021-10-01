@@ -1,0 +1,268 @@
+@media (max-width: 768px) {
+  .modal-btn {
+    display: block;
+    width: 35%;
+    margin-top: 15px;
+  } 
+
+  .form-wrapper {
+    display: none;
+  }
+
+  .top-form {
+    background-color: $light-blue;
+  } 
+
+  .btn-wrapper {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .logo__img {
+    height: 55px;
+  } 
+
+  .header {
+    &__header-wrapper {
+      height: 55px;
+    }
+  }
+
+  .navigation {
+    &__btn {
+      width: 26px;
+      height: 20px;
+      &::before {
+        width: 26px;
+        top: 7px;
+      }
+    }
+
+    &__list {
+      top: 55px;
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    &__date-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__text {
+      @include fwfslh(500, 18px, 23px);
+    }
+  }
+
+  .benefits {
+    margin-top: 45px; 
+
+    &-item {
+      width: 23%;
+    }
+  }
+  
+  .section {
+    &__title {
+      @include fwfslh(900, 60px, 75px)
+    }
+
+    &__subtitle {
+      @include fwfslh(900, 22px, 22px);
+    } 
+
+    &__text {
+      @include fwfslh(500, 17px, 24px);
+    }
+  }
+
+  .features {
+    padding-top: 60px;
+    .product {
+      &__item {
+        width: 370px;
+      }
+
+      &__card {
+        &-img {
+          margin-left: 34px;
+          width: 205px;
+        }
+
+        &-title {
+          font-size: 14px;
+          padding-bottom: 15px;
+        }
+
+        &-text {
+          @include fwfslh(500, 14px, 17px);
+          padding-bottom: 20px;
+        }
+      }
+    }
+  } 
+
+  .anwendungen {
+    padding: 50px 0 70px 0;
+
+    &__title {
+      padding-bottom: 70px;
+    }
+
+    &__item {
+      &-img {
+        width: 65px;
+        height: 65px;
+      }
+
+      &-title {
+        @include fwfslh(900, 14px, 15px);
+        padding: 15px 0 15px 0;
+      }
+
+      &-text {
+        @include fwfslh(500, 14px, 19px);
+      }
+    }
+  } 
+
+  .technologie {
+    padding-top: 70px;
+
+    &__info {
+      padding-bottom: 20px;
+
+      &-text {
+        @include fwfslh(500, 16px, 23px);
+      }
+    }
+
+    &__img {
+      height: 327px;
+    }
+
+    &__item {
+      width: 36%;
+      &-dash {
+        padding-right: 11px;
+      }
+    }  
+  }
+
+  .produkte {
+    padding-top: 70px;
+
+    &__section {
+      justify-content: space-around;
+    }
+
+    &__container {
+      width: 385px;
+    }
+
+    &__list {
+      padding: 24px 0 30px 0;
+      &-item {
+        padding-bottom: 14px;
+        @include fwfslh(900, 16px, 15px);
+      }
+    }
+    
+    .line, .line-rev {
+      display: none;
+    }
+
+    &__button {
+      width: 44%;
+      height: 37px;
+      font-size: 13px;
+    }
+  }
+
+  .technologie-horse {
+    padding-top: 70px;
+    &__title {
+      padding-bottom: 15px;
+    }
+
+    .section__header-titles {
+      width: 96%;
+    }
+
+    .section__header-text {
+      width: 96%;
+    }
+
+    &__list {
+      padding-top: 7px;
+      &-item {
+        padding-bottom: 14px;
+        @include fwfslh(900, 16px, 15px);
+      }
+    }
+  }
+
+  .slider {
+    padding: 80px 0 80px 0;
+
+    &__title {
+      @include fwfslh(900, 54px, 53px);
+    }
+
+    &__arrows {
+      padding-top: 35px;
+    }
+
+    &__item {
+      &-text {
+        @include fwfslh(900, 19px, 23px);
+        padding-bottom: 25px;
+      }
+
+      &-img {
+        width: 48px;
+      }
+
+      &-name {
+        @include fwfslh(900, 18px, 23px);
+        padding: 12px 0 3px 0;
+      }
+
+      &-subtext {
+        @include fwfslh(500, 13px, 11px);
+      }
+    }
+  }
+
+  .technologie-info {
+    padding: 50px 0;
+
+    &__title {
+      padding-bottom: 70px;
+    }
+
+    &__img {
+      width: 75%;
+    }
+  }
+
+  .kontaktiere {
+    min-height: 568px;
+    &__block {
+      width: 98%;
+      padding-top: 0;
+    }
+  } 
+
+  .footer {
+    &__inner {
+      height: 94px;
+    }
+
+    &__wrapper {
+      padding-bottom: 5px;
+    }
+  }
+}

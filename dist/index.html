@@ -17,6 +17,7 @@
             </a>
     
             <nav class="navigation">
+              <button class="navigation__btn"></button>
               <ul class="navigation__list">
                 <li class="navigation__list-item">
                   <a class="navigation__link" href="#">Home</a>
@@ -83,62 +84,68 @@
               </p> 
   
               <div class="benefits">
-                <div class="benefits-item">
-                  <h3 class="benefits-item__number">500</h3>
-                  <h6 class="benefits-item__text">
-                    zufriedener 
-                    Kunde
-                  </h6>
+                <div class="benefits__wrapper">
+                  <div class="benefits-item">
+                    <h3 class="benefits-item__number">500</h3>
+                    <h6 class="benefits-item__text">
+                      zufriedener 
+                      Kunde
+                    </h6>
+                  </div>
+                  <div class="benefits-item">
+                    <h3 class="benefits-item__number">2</h3>
+                    <h6 class="benefits-item__text">
+                      Jahre 
+                      Garantie
+    
+                    </h6>
+                  </div>
+                  <div class="benefits-item">
+                    <h3 class="benefits-item__number">800+</h3>
+                    <h6 class="benefits-item__text">
+                      positives 
+                      Feedback
+                    </h6>
+                  </div>
                 </div>
-                <div class="benefits-item">
-                  <h3 class="benefits-item__number">2</h3>
-                  <h6 class="benefits-item__text">
-                    Jahre 
-                    Garantie
-  
-                  </h6>
-                </div>
-                <div class="benefits-item">
-                  <h3 class="benefits-item__number">800+</h3>
-                  <h6 class="benefits-item__text">
-                    positives 
-                    Feedback
-                  </h6>
-                </div>
+                <button class="modal-btn button">KONTAKT</button>
               </div>
             </div>
-  
-            <form action="#" class="contact-form top-form">
-              <div class="contact-form__wrapper">
-                <h1 class="contact-form__title">
-                  Erfahren Sie mehr
-                </h1>
-                <div class="contact-form__input-group">
-                  <input id="name" type="text" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="name">Name</label>
+            
+
+            <div class="form-wrapper">
+              <form action="#" class="contact-form top-form">
+                <div class="contact-form__wrapper">
+                  <h1 class="contact-form__title">
+                    Erfahren Sie mehr
+                  </h1>
+                  <div class="contact-form__input-group">
+                    <input id="name" type="text" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="name">Name</label>
+                  </div>
+                  <div class="contact-form__input-group">
+                    <input id="email" type="email" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="email">Email</label>
+                  </div>
+                  <select class="contact-form__select">
+                    <option selected>Ich interessiere mich als</option>
+                    <option value="first">111</option>
+                    <option value="second">222</option>
+                  </select>
+                  <div class="contact-form__input-group">
+                    <input id="interes" type="text" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+                  </div>
+                  <button class="contact-form__button button">Kontakt</button>
+                  <p class="contact-form__text">
+                    Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
+                  </p>
                 </div>
-                <div class="contact-form__input-group">
-                  <input id="email" type="email" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="email">Email</label>
-                </div>
-                <select class="contact-form__select">
-                  <option selected>Ich interessiere mich als</option>
-                  <option value="first">111</option>
-                  <option value="second">222</option>
-                </select>
-                <div class="contact-form__input-group">
-                  <input id="interes" type="text" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="interes">Ich interesse mich für</label>
-                </div>
-                <button class="contact-form__button button">Kontakt</button>
-                <p class="contact-form__text">
-                  Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
-                </p>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -169,11 +176,56 @@
               <span class="icon-eye eye1"></span>
               <span class="icon-eye eye2"></span>
               <span class="icon-eye eye3"></span>
-              <img class="product__img" src="./img/features-img.svg" alt="">
+              <div class="product__container">
+                <img class="product__img" src="./img/features-img.svg" alt="">
+              </div>
             </div> 
 
             <div class="product__card-wrapper">
-              
+              <div class="product__card-slider">
+                <div class="product__card">
+                  <img class="product__card-img" src="./img/features-right-img.svg" alt="">
+                  <div class="product__card-description">
+                    <h3 class="product__card-title">ANTIBAKTERIELLE BEHANDLUNGS - SCHLAUFE</h3>
+                    <p class="product__card-text">
+                      Sicheres Handling durch 
+                      9fach isolierte
+                      Behandlungsschlaufe
+                    </p>
+                    <p class="product__card-text text-italic">
+                      < 20cm Eindringtiefe
+                    </p>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <img class="product__card-img" src="./img/features-right-img.svg" alt="">
+                  <div class="product__card-description">
+                    <h3 class="product__card-title">ANTIBAKTERIELLE BEHANDLUNGS - SCHLAUFE</h3>
+                    <p class="product__card-text">
+                      Sicheres Handling durch 
+                      9fach isolierte
+                      Behandlungsschlaufe
+                    </p>
+                    <p class="product__card-text text-italic">
+                      < 20cm Eindringtiefe
+                    </p>
+                  </div>
+                </div>
+                <div class="product__card">
+                  <img class="product__card-img" src="./img/features-right-img.svg" alt="">
+                  <div class="product__card-description">
+                    <h3 class="product__card-title">ANTIBAKTERIELLE BEHANDLUNGS - SCHLAUFE</h3>
+                    <p class="product__card-text">
+                      Sicheres Handling durch 
+                      9fach isolierte
+                      Behandlungsschlaufe
+                    </p>
+                    <p class="product__card-text text-italic">
+                      < 20cm Eindringtiefe
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -223,8 +275,8 @@
       <div class="main-container">
         <div class="technologie__content">
           <div class="technologie__info">
-            <h1 class="section__title pb-40">Technologie</h1>
-            <h5 class="section__subtitle pb-40">
+            <h1 class="section__title technologie__title">Technologie</h1>
+            <h5 class="section__subtitle technologie__subtitle">
               Equitron-pro wirkt auf zellulärer Ebene und hat einen direkten und positiven Einfluss auf die Genexpression des Körpers. zum Beispiel  geschlossen wird und der Bruch wieder heilt.
             </h5>
             <p class="technologie__info-text">
@@ -261,7 +313,9 @@
       <div class="main-container">
         <h1 class="section__title pb-40">Produkte</h1>
         <div class="produkte__section">
-          <img class="produkte__img" src="./img/product-1.png" alt=""> 
+          <div class="produkte__container">
+            <img class="produkte__img" src="./img/product-1.png" alt=""> 
+          </div>
           <div class="produkte__info">
             <img src="./img/line1.svg" alt="" class="line">
             <h3 class="produkte__title">equitron-pro</h3>
@@ -292,7 +346,9 @@
             </ul>
             <button class="produkte__button button">hier bestellen</button>
           </div>
-          <img class="produkte__img" src="./img/product-2.png" alt=""> 
+          <div class="produkte__container">
+            <img class="produkte__img" src="./img/product-2.png" alt=""> 
+          </div>
         </div>
       </div>
     </section>
@@ -301,7 +357,7 @@
       <div class="main-container">
         <header class="section__header">
           <div class="section__header-titles">
-            <h1 class="section__title pb-30">Technologie</h1>
+            <h1 class="section__title technologie-horse__title">Technologie</h1>
             <h4 class="section__subtitle">
               Equitron-pro wirkt auf zellulärer Ebene und hat einen direkten und positiven Einfluss auf die Genexpression des Körpers. zum Beispiel  geschlossen wird und der Bruch wieder heilt. 
             </h4>
@@ -315,6 +371,20 @@
             </p>
           </div>
         </header>
+
+        <div class="technologie-horse__info">
+          <h3 class="technologie-horse__title">equitron-pro</h3>
+          <ul class="technologie-horse__list">
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+            <li class="technologie-horse__list-item">Durch die Aktivierung der Gene werden</li>
+          </ul>
+        </div>
       </div>
 
       <div class="horse-wrapper">
@@ -519,42 +589,47 @@
         <div class="kontaktiere__wrapper">
           <div class="kontaktiere__block">
             <h1 class="section__title pb-30">kontaktiere uns</h1>
-              <h4 class="section__subtitle">
-                Equitron-pro wirkt auf zellulärer Ebene und hat einen direkten und positiven Einfluss auf die Genexpression des Körpers. zum Beispiel  geschlossen wird und der Bruch wieder heilt. 
-              </h4>
+            <h4 class="section__subtitle">
+              Equitron-pro wirkt auf zellulärer Ebene und hat einen direkten und positiven Einfluss auf die Genexpression des Körpers. zum Beispiel  geschlossen wird und der Bruch wieder heilt. 
+            </h4>
+            <div class="btn-wrapper">
+              <button class="modal-btn button">KONTAKT</button>
+            </div>
           </div>
   
-          <form action="#" class="contact-form bottom-form">
-            <div class="contact-form__wrapper">
-              <h1 class="contact-form__title">
-                Erfahren Sie mehr
-              </h1>
-              <div class="contact-form__input-group">
-                <input id="name" type="text" class="contact-form__input" required>
-                <span class="contact-form__bar"></span>
-                <label class="contact-form__label" for="name">Name</label>
+          <div class="form-wrapper">
+            <form action="#" class="contact-form bottom-form">
+              <div class="contact-form__wrapper">
+                <h1 class="contact-form__title">
+                  Erfahren Sie mehr
+                </h1>
+                <div class="contact-form__input-group">
+                  <input id="name" type="text" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="name">Name</label>
+                </div>
+                <div class="contact-form__input-group">
+                  <input id="email" type="email" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="email">Email</label>
+                </div>
+                <select class="contact-form__select">
+                  <option selected>Ich interessiere mich als</option>
+                  <option value="first">111</option>
+                  <option value="second">222</option>
+                </select>
+                <div class="contact-form__input-group">
+                  <input id="interes" type="text" class="contact-form__input" required>
+                  <span class="contact-form__bar"></span>
+                  <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+                </div>
+                <button class="contact-form__button button">Kontakt</button>
+                <p class="contact-form__text">
+                  Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
+                </p>
               </div>
-              <div class="contact-form__input-group">
-                <input id="email" type="email" class="contact-form__input" required>
-                <span class="contact-form__bar"></span>
-                <label class="contact-form__label" for="email">Email</label>
-              </div>
-              <select class="contact-form__select">
-                <option selected>Ich interessiere mich als</option>
-                <option value="first">111</option>
-                <option value="second">222</option>
-              </select>
-              <div class="contact-form__input-group">
-                <input id="interes" type="text" class="contact-form__input" required>
-                <span class="contact-form__bar"></span>
-                <label class="contact-form__label" for="interes">Ich interesse mich für</label>
-              </div>
-              <button class="contact-form__button button">Kontakt</button>
-              <p class="contact-form__text">
-                Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
-              </p>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
 
       </div>
@@ -616,7 +691,7 @@
         </div>
       </div>
       
-    </footer>
+    </footer> 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

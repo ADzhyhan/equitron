@@ -16,34 +16,20 @@ body {
 
 .top-btm-container {
   @include container(1440px);
+  padding: 0px 10px;
 }
 
 .main-container {
   @include container(1196px);
+  padding: 0px 10px;
 } 
 
 .blue-container {
   @include container(1626px);
   background: $light-blue;
+  padding: 0px 10px;
 }
 
-@media (max-width: 1196px) {
-  .main-container {
-    max-width: 970px;
-  }
-}
-
-@media (max-width: 992px) {
-  .main-container {
-    max-width: 750px;
-  }
-}
-
-@media (max-width: 767px) {
-  .main-container {
-    max-width: none;
-  }
-}
 .button {
   @include wh(48%, 44px);
   text-align: center;
@@ -63,6 +49,10 @@ body {
   &:active {
     background: #084d7a;
   }
+}
+
+.modal-btn {
+  display: none;
 }
 
 .contact-form {
@@ -222,4 +212,5 @@ body {
 @import 'page/slider';
 @import 'page/technologie-info';
 @import 'page/kontakt'; 
-@import 'page/footer';
+@import 'page/footer'; 
+@import 'media/media';

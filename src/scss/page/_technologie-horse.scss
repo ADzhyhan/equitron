@@ -1,5 +1,13 @@
 .technologie-horse {
   padding-top: 150px;
+
+  &__info {
+    display: none;
+  }
+
+  &__title {
+    padding-bottom: 30px;
+  }
 }
 
 .horse-wrapper {

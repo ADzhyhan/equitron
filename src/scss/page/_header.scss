@@ -37,6 +37,10 @@
     }
   }
 
+  &__btn {
+    display: none;
+  }
+
   &__link {
     font-family: $ffa;
     @include fwfslh(500, 18px, 25px); 
@@ -84,6 +88,7 @@
   &__date {
     font-family: $ffp-black;
     @include fwfslh(900, 30px, 36px);
+    // @include adaptive-font(900, 30, 23, 36, 29, 1440);
     color: #fff;
     padding-right: 7px;
   } 
@@ -91,23 +96,27 @@
   &__title {
     font-family: $ffp-black;
     @include fwfslh(900, 90px, 108px);
+    // @include adaptive-font(900, 90, 42, 108, 60, 1440);
     color: #fff; 
   }
 
   &__text {
     font-family: $ffa; 
     @include fwfslh(500, 18px, 25px);
+    // @include adaptive-font(500, 18, 16, 25, 22, 1440);
     color: #fff;
     margin-top: 35px;
   }
 } 
 
 .benefits {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
   margin-top: 110px;
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
   &-item {
     width: 12%;
 

@@ -1,6 +1,14 @@
 .technologie {
   padding-top: 250px;
 
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__subtitle {
+    padding-bottom: 40px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,84 @@
+@media (max-width: 576px) {
+  .logo__img {
+    height: 50px;
+  }
+
+  .header {
+    &__header-wrapper {
+      height: 50px;
+    }
+
+    .social {
+      &__item {
+        padding-right: 55px;
+      }
+
+      &__link {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .navigation {
+    &__btn {
+      width: 24px;
+      height: 18px;
+      &::before {
+        width: 24px;
+        top: 6px;
+      }
+    }
+
+    &__list {
+      top: 50px;
+    }
+
+    &__link {
+      padding: 10px 0;
+      @include fwfslh(500, 15px, 15px);
+    }
+  }
+
+  .content {
+    &__date {
+      @include fwfslh(900, 16px, 23px);
+      padding-right: 3px;
+    }
+
+    .small-num {
+      font-size: 9px;
+    }
+
+    &__title {
+      @include fwfslh(900, 45px, 45px);
+    }
+
+    &__text {
+      margin-top: 12px;
+      @include fwfslh(500, 15px, 18px);
+    }
+  }
+
+  .benefits {
+    margin-top: 33px; 
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      width: 20%;
+      &__number {
+        @include fwfslh(900, 21px, 11px);
+      }
+
+      &__text {
+        @include fwfslh(500, 13px, 16px);
+      }
+    }
+
+    .modal-btn {
+      width: 32%;
+      margin-top: 0;
+      height: 37px;
+      font-size: 13px;
+    }
+  }
+}

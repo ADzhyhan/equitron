@@ -4,6 +4,13 @@
   background-repeat: no-repeat;
   background-position: bottom left;
 
+  &__container {
+    img {
+      @include wh(100%, 100%);
+      object-fit: cover;
+    }
+  }
+
   &__info {
     position: relative;
   }

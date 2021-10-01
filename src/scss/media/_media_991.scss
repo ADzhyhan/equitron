@@ -1,0 +1,374 @@
+@media (max-width: 991px) {
+  .header__header-wrapper {
+    height: 80px;
+    z-index: 1;
+  }
+
+  .logo__img {
+    height: 75px;
+  }
+  
+  .navigation {z-index: 0;
+    order: 1;
+    &__list {
+      display: block;
+      position: absolute; 
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: #744825;
+      // background-color: #3d4828;
+      opacity: 0.9;
+      text-align: center;
+      transform: translateY(-520px);
+      transition: all .5s;
+      z-index: -1;
+
+      &--active {
+        transform: translateY(0);
+      }
+
+      &-item {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 20px 0;
+    }
+
+    &__btn {
+      display: block;
+      width: 35px;
+      height: 24px;
+      border: none;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      background-color: transparent; 
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        top: 9px;
+      }
+    }
+  }
+  
+  .social__item {
+    padding-right: 75px;
+  }
+
+  .content {
+    &__date {
+      @include fwfslh(900, 19px, 25px);
+      padding-right: 4px;
+    }
+
+    &__title {
+      @include fwfslh(900, 55px, 60px);
+    }
+
+    &__text {
+      @include fwfslh(500, 16px, 22px);
+      margin-top: 22px;
+    }
+
+    .small-num {
+      @include fwfslh(900, 11px, 20px);
+    }
+  } 
+
+  .benefits {
+    margin-top: 50px;
+    &__item {
+      &-number {
+        @include fwfslh(900, 25px, 23px);
+      }
+
+      &-text {
+        @include fwfslh(500, 15px, 18px);
+      }
+    }
+  }
+
+  .contact-form {
+    max-width: 373px;
+    padding: 35px 65px 35px 65px;
+
+    &__title {
+      @include fwfslh(400, 24px, 16px)
+    }
+
+    &__input-group {
+      margin-bottom: 25px;
+    } 
+
+    &__input {
+      @include fwfslh(900, 14px, 18px);
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+
+    &__select {
+      @include fwfslh(900, 14px, 18px); 
+      margin-bottom: 25px;
+    }
+
+    &__button {
+      @include fwfslh(900, 13px, 14px); 
+      width: 46%;
+      height: 38px;
+    }
+  }
+
+  .section {
+    &__header {
+      flex-direction: column;
+      align-items: center;
+
+      &-titles {
+        width: 70%;
+        margin-bottom: 13px;
+      }
+
+      &-text {
+        width: 78%;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      @include fwfslh(900, 25px, 25px);
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 18px;
+      padding-bottom: 7px;
+    }
+  }
+
+  .features {
+    padding-top: 80px;
+    margin-bottom: 50px; 
+
+    .icon-eye {
+      display: none;
+    }
+
+    .product {
+      justify-content: space-around;
+      align-items: center;
+      &__item {
+        width: 433px;
+      }
+
+      &__card {
+        padding-bottom: 0;
+
+        &-slider {
+          display: block;
+        }
+
+        &-wrapper {
+          width: 31%;
+        }
+
+        &-img {
+          padding-left: 0;
+          margin-left: 81px;
+          width: 225px;
+        }
+
+        &-description {
+          width: 100%;
+        }
+
+        &-title {
+          @include fwfslh(900, 15px, 18px); 
+          padding-bottom: 18px;
+        }
+
+        &-text {
+          @include fwfslh(500, 15px, 20px); 
+          padding-bottom: 30px;
+        }
+
+        .product__card-text + .product__card-text:last-child {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .anwendungen {
+    padding: 60px 0 80px 0;
+
+    &__title {
+      padding-bottom: 80px;
+    }
+
+    &__item {
+      width: 23%;
+
+      &-title {
+        padding: 20px 0 20px 0;
+        @include fwfslh(900, 15px, 17px);
+      }
+
+      &-text {
+        @include fwfslh(500, 15px, 21px);
+      }
+    }
+  } 
+
+  .technologie {
+    padding-top: 100px;
+
+    &__title {
+      padding-bottom: 18px;
+    }
+
+    &__subtitle {
+      padding-bottom: 22px;
+    }
+
+    &__item {
+      width: 30%;
+    }
+  }
+
+  .produkte {
+    padding-top: 90px;
+
+    &__container {
+      width: 500px;
+    }
+
+    &__list-item {
+      @include fwfslh(900, 17px, 17px);
+    }
+
+    .line {
+      right: 340px;
+      width: 348px;
+
+      &-rev {
+        width: 284px;
+      }
+    }
+  } 
+
+  .technologie-horse {
+    .horse-wrapper {
+      display: none;
+    }
+
+    &__info {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+    } 
+
+    &__title {
+      font-family: $ffp-black;
+      @include fwfslh(900, 30px, 18px);
+      color: $blue;
+    }
+
+    &__list {
+      padding-top: 20px;
+      list-style: inherit;
+      text-transform: lowercase;
+      padding-left: 15px;
+
+      &-item {
+        @include fwfslh(900, 17px, 17px);
+        padding-bottom: 20px;
+        font-family: $ffa;
+      }
+
+      &-item + &-item:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .slider {
+    padding: 110px 0 90px 0;
+
+    &__title {
+      @include fwfslh(900, 62px, 60px);
+    }
+
+    &__arrow {
+      width: 60px;
+      height: 60px;
+      font-size: 35px;
+    }
+
+    .icon-left-arrow {
+      margin-right: 20px;
+    } 
+
+    &__item {
+      width: 95%;
+
+      &-text {
+        @include fwfslh(900, 23px, 26px);
+        padding-bottom: 40px;
+      }
+
+      &-name {
+        @include fwfslh(900, 20px, 28px);
+      }
+
+      &-subtext {
+        @include fwfslh(500, 16px, 18px);
+      }
+    }
+  }
+
+  .technologie-info {
+    padding: 60px 0;
+
+    &__title {
+      padding-bottom: 90px;
+    }
+  }
+
+  .kontaktiere {
+    padding-top: 80px;
+    min-height: 655px;
+    &__block {
+      .section__title {
+        @include fwfslh(900, 60px, 65px);
+      }
+    }
+  } 
+
+  .footer {
+    &__inner {
+      height: 123px;
+    }
+    &__wrapper {
+      padding-bottom: 11px;
+    }
+
+    .copyright__text {
+      @include fwfslh(400, 11px, 15px);
+    }
+  }
+}

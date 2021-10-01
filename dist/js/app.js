@@ -4,6 +4,9 @@ const eye3 = document.querySelector('.eye3');
 const cardWrapper = document.querySelector('.product__card-wrapper');
 const nextArrow = document.querySelector('.icon-right-arrow');
 const prevArrow = document.querySelector('.icon-left-arrow');
+const menuBtn = document.querySelector('.navigation__btn');
+const navList = document.querySelector('.navigation__list');
+
 
 const card =
 `
@@ -43,10 +46,21 @@ eye3.addEventListener('mouseout', (e) => {
   cardWrapper.innerHTML = ''; 
 }) 
 
+menuBtn.addEventListener('click', (e) => {
+  navList.classList.toggle('navigation__list--active');
+})
+
 $(function(){
   $('.slider__slider-block').slick({
     infinite: true,
     nextArrow: nextArrow, 
     prevArrow: prevArrow
+  })
+
+  $('.product__card-slider').slick({
+    infinite: true,
+    autoplay: true,
+    nextArrow: false, 
+    prevArrow: false
   })
 })

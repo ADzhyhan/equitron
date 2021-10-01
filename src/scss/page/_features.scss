@@ -25,6 +25,13 @@
   display: flex;
   justify-content: space-between;
 
+  &__container {
+    img {
+      @include wh(100%, 100%);
+      object-fit: cover;
+    }
+  }
+
   &__item {
     position: relative;
 
@@ -56,6 +63,10 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
+
+    &-slider {
+      display: none;
+    }
 
     &-wrapper {
       width: 34%;
@@ -90,6 +101,10 @@
       padding-bottom: 0px;
     }
   }
+}
+ 
+.product__card {
+  display: flex;
 }
 
 .text-italic {

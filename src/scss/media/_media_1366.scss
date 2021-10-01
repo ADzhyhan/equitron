@@ -1,0 +1,138 @@
+@media (max-width: 1366px) {
+  .header__header-wrapper {
+    height: 115px;
+
+    .navigation__link {
+      font-size: 17px;
+    }
+  }
+
+  .logo__img {
+    height: 75px;
+  }
+  
+  .navigation__list-item {
+    padding-right: 40px;
+  }
+  
+  .content__date {
+    @include fwfslh(900, 26px, 32px);
+  } 
+
+  .small-num {
+    @include fwfslh(900, 14px, 22px);
+  }
+
+  .content__title {
+    @include fwfslh(900, 77px, 95px);
+  } 
+
+  .benefits {
+    margin-top: 80px;
+
+    &-item {
+      &__number {
+        @include fwfslh(900, 28px, 34px);
+      }
+
+      &__text {
+        @include fwfslh(500, 16px, 23px);
+      }
+    }
+  }
+
+  .contact {
+    &-form {
+      max-width: 440px;
+      padding: 45px 75px 45px 75px;
+
+      &__title {
+        @include fwfslh(400, 29px, 35px);
+      }
+
+      &__input-group {
+        margin-bottom: 34px;
+      }
+
+      &__label {
+        font-size: 15px;
+      }
+
+      &__input {
+        @include fwfslh(900, 15px, 21px);
+      }
+
+      &__select {
+        @include fwfslh(900, 15px, 21px);
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  .features {
+    padding-top: 138px;
+    margin-bottom: 120px;
+  }
+
+  .section {
+    &__title {
+      @include fwfslh(900, 66px, 79px);
+    }
+
+    &__subtitle {
+      @include fwfslh(900, 20px, 25px);
+    }
+  }
+
+  .anwendungen {
+    padding: 110px 0 145px 0;
+  }
+
+  .technologie {
+    padding-top: 160px; 
+  } 
+
+  .produkte {
+    padding-top: 115px;
+  }
+
+  .technologie-horse {
+    padding-top: 122px;
+  } 
+
+  .slider {
+    padding: 175px 0 180px 0; 
+
+    &__title {
+      @include fwfslh(900, 66px, 69px);
+    } 
+
+    &__item {
+      &-text {
+        @include fwfslh(900, 26px, 33px);
+      }
+    }
+  }
+
+  .technologie-info {
+    padding: 95px 0;
+
+    &__title {
+      padding-bottom: 130px;
+    }
+  }
+
+  .kontaktiere {
+    padding-top: 130px;
+  }
+
+  .footer {
+    &__inner {
+      height: 200px;
+    } 
+
+    &__wrapper {
+      padding-bottom: 28px;
+    }
+  }
+}
