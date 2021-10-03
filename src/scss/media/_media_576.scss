@@ -63,6 +63,35 @@
       margin-top: 12px;
       @include fwfslh(500, 15px, 18px);
     }
+
+    .modal-btn {
+      width: 100%;
+    }
+  }
+
+  .contact-form {
+    max-width: 285px;
+    padding: 30px 35px;
+    &__title {
+      font-size: 17px;
+      padding-bottom: 20px;
+    }
+    &__label {
+      @include fwfslh(900, 11px, 18px);
+    }
+    &__input {
+      @include fwfslh(900, 11px, 18px);
+      padding-bottom: 3px;
+    }
+    &__select {
+      @include fwfslh(900, 11px, 18px);
+    }
+    &__button {
+      width: 100%;
+    }
+    &__input-group {
+      margin-bottom: 18px;
+    }
   }
 
   .benefits {
@@ -79,13 +108,17 @@
         @include fwfslh(500, 13px, 16px);
       }
     }
+  }
 
-    .modal-btn {
-      width: 32%;
-      margin-top: 0;
-      height: 37px;
-      font-size: 13px;
-    }
+  .popup-btn {
+    width: 31%;
+    height: 37px;
+  }
+
+  .modal-btn {
+    width: 35%;
+    margin-top: 0;
+    font-size: 13px;
   }
 
   .features {

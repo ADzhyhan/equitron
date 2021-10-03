@@ -5,13 +5,47 @@
     margin-top: 15px;
   } 
 
-  .form-wrapper {
-    display: none;
-  }
-
   .top-form {
     background-color: $light-blue;
+    position: relative;
   } 
+
+  .contact-form {
+    &__close {
+      display: block;
+      font-family: $ffp-black;
+      @include fwfslh(900, 10px, 9px);
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: $black;
+    }
+  }
+
+  .form-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    
+    &:target{
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    &__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+    }
+  }
 
   .btn-wrapper {
     display: flex; 
@@ -75,6 +109,7 @@
 
     &__text {
       @include fwfslh(500, 17px, 24px);
+      padding-bottom: 17px;
     }
   }
 
@@ -132,7 +167,7 @@
     padding-top: 70px;
 
     &__info {
-      padding-bottom: 20px;
+      padding-bottom: 25px;
 
       &-text {
         @include fwfslh(500, 16px, 23px);
@@ -149,6 +184,9 @@
         padding-right: 11px;
       }
     }  
+    &__subtitle {
+      padding-bottom: 26px;
+    }
   }
 
   .produkte {
@@ -196,7 +234,7 @@
     }
 
     &__list {
-      padding-top: 7px;
+      padding-top: 20px;
       &-item {
         padding-bottom: 14px;
         @include fwfslh(900, 16px, 15px);

@@ -29,7 +29,14 @@
     justify-content: space-between;
 
     &-item {
-      padding-right: 45px;
+      margin-right: 45px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      transition: .3s all;
+      &:hover {
+        border-bottom: 2px solid #fff;
+        transition: .3s all;
+      }
     }
 
     &-item + &-item:last-child {
@@ -62,6 +69,13 @@
 
   &__link + &__link:last-child {
     padding-right: 0;
+  }
+
+  &__img {
+    &:hover {
+      color: $blue;
+      transition: all .3s;
+    }
   }
 }   
 

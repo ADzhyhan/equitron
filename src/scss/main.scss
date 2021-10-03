@@ -60,7 +60,9 @@ body {
   max-width: 461px;
   border-radius: 15px;
   padding: 50px 80px 50px 80px; 
-
+  &__close {
+    display: none;
+  }
   &__title {
     font-family: $ffp-reg;
     @include fwfslhls(normal, 30px, 36px, 0.05em);
@@ -68,12 +70,10 @@ body {
     text-align: center;
     padding-bottom: 30px;
   }
-
   &__input-group {
     position: relative;
     margin-bottom: 40px;
   }
-
   &__input {
     font-family: $ffa;
     @include fwfslhls(900, 16px, 22px, 0.05em);
@@ -84,7 +84,6 @@ body {
     width: 100%;
     border-bottom: 1px solid #000000;
     padding-bottom: 7px;
-
     &:focus {
       outline: none;
     }
@@ -101,7 +100,6 @@ body {
     position: relative;
     display: block;
     width: 320px; 
-
     &::before, &::after {
       content: "";
       height: 2px;
@@ -113,11 +111,9 @@ body {
       -moz-transition: 0.2s ease all;
       -webkit-transition: 0.2s ease all;
     }
-
     &::before {
       left: 50%;
     }
-
     &::after {
       right: 50%;
     }
@@ -167,11 +163,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 37px;
-
     &-titles {
       width: 40%;
     }
-
     &-text {
       width: 34%;
     }

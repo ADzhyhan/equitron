@@ -20,22 +20,22 @@
               <button class="navigation__btn"></button>
               <ul class="navigation__list">
                 <li class="navigation__list-item">
-                  <a class="navigation__link" href="#">Home</a>
+                  <a class="navigation__link" href="#home">Home</a>
                 </li>
                 <li class="navigation__list-item">
                   <a class="navigation__link" href="#features">Features</a>
                 </li>
                 <li class="navigation__list-item">
-                  <a class="navigation__link" href="#">Applications</a>
+                  <a class="navigation__link" href="#anwendungen">Applications</a>
                 </li>
                 <li class="navigation__list-item">
-                  <a class="navigation__link" href="#">References</a>
+                  <a class="navigation__link" href="#technologie-info">References</a>
                 </li>
                 <li class="navigation__list-item">
-                  <a class="navigation__link" href="#">Technology</a>
+                  <a class="navigation__link" href="#technologie">Technology</a>
                 </li>
                 <li class="navigation__list-item">
-                  <a class="navigation__link" href="#">Products</a>
+                  <a class="navigation__link" href="#produkte">Products</a>
                 </li>
               </ul>
             </nav>
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <div class="top-wrapper">
+      <div id="home" class="top-wrapper">
         <div class="top-btm-container">
           <div class="top-content">
             <div class="content">
@@ -108,43 +108,44 @@
                     </h6>
                   </div>
                 </div>
-                <button class="modal-btn button">KONTAKT</button>
+                <a class="popup-btn" href="#popup">
+                  <button class="modal-btn button">KONTAKT</button>
+                </a>
               </div>
             </div>
-            
 
-            <div class="form-wrapper">
-              <form action="#" class="contact-form top-form">
-                <div class="contact-form__wrapper">
-                  <h1 class="contact-form__title">
-                    Erfahren Sie mehr
-                  </h1>
-                  <div class="contact-form__input-group">
-                    <input id="name" type="text" class="contact-form__input" required>
-                    <span class="contact-form__bar"></span>
-                    <label class="contact-form__label" for="name">Name</label>
+            <div id="popup" class="form-container">
+              <div class="form-container__body">
+                <form action="#" class="contact-form top-form">
+                  <a href="#" class="contact-form__close">X</a>
+                  <div class="contact-form__wrapper">
+                    <h1 class="contact-form__title">
+                      Erfahren Sie mehr
+                    </h1>
+                    <div class="contact-form__input-group">
+                      <input id="name" type="text" class="contact-form__input" required>
+                      <span class="contact-form__bar"></span>
+                      <label class="contact-form__label" for="name">Name</label>
+                    </div>
+                    <div class="contact-form__input-group">
+                      <input id="email" type="email" class="contact-form__input" required>
+                      <span class="contact-form__bar"></span>
+                      <label class="contact-form__label" for="email">Email</label>
+                    </div>
+                    <select class="contact-form__select">
+                      <option selected>Ich interessiere mich als</option>
+                      <option value="first">111</option>
+                      <option value="second">222</option>
+                    </select>
+                    <div class="contact-form__input-group">
+                      <input id="interes" type="text" class="contact-form__input" required>
+                      <span class="contact-form__bar"></span>
+                      <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+                    </div>
+                    <button class="contact-form__button button">Kontakt</button>
                   </div>
-                  <div class="contact-form__input-group">
-                    <input id="email" type="email" class="contact-form__input" required>
-                    <span class="contact-form__bar"></span>
-                    <label class="contact-form__label" for="email">Email</label>
-                  </div>
-                  <select class="contact-form__select">
-                    <option selected>Ich interessiere mich als</option>
-                    <option value="first">111</option>
-                    <option value="second">222</option>
-                  </select>
-                  <div class="contact-form__input-group">
-                    <input id="interes" type="text" class="contact-form__input" required>
-                    <span class="contact-form__bar"></span>
-                    <label class="contact-form__label" for="interes">Ich interesse mich für</label>
-                  </div>
-                  <button class="contact-form__button button">Kontakt</button>
-                  <p class="contact-form__text">
-                    Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
-                  </p>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -233,7 +234,7 @@
     </section>
 
     <div class="blue-container">
-      <section class="anwendungen section">
+      <section id="anwendungen" class="anwendungen section">
         <div class="main-container">
           <h1 class="section__title anwendungen__title">Anwendungen</h1>
           <div class="anwendungen__items">
@@ -271,7 +272,7 @@
       </section> 
     </div>
 
-    <section class="technologie section">
+    <section id="technologie" class="technologie section">
       <div class="main-container">
         <div class="technologie__content">
           <div class="technologie__info">
@@ -314,7 +315,7 @@
       </div>
     </section> 
 
-    <section class="produkte section">
+    <section id="produkte" class="produkte section">
       <div class="main-container">
         <h1 class="section__title produkte__top-title">Produkte</h1>
         <div class="produkte__section">
@@ -358,7 +359,7 @@
       </div>
     </section>
 
-    <section class="technologie-horse section">
+    <section id="technologie-horse" class="technologie-horse section">
       <div class="main-container">
         <header class="section__header">
           <div class="section__header-titles">
@@ -519,7 +520,7 @@
       
     </section>
 
-    <section class="slider">
+    <section id="slider" class="slider">
       <div class="main-container">
         <div class="slider__wrapper">
           <div class="slider__text">
@@ -564,7 +565,7 @@
     </section> 
 
     <div class="blue-container">
-      <section class="technologie-info section">
+      <section id="technologie-info" class="technologie-info section">
         <div class="main-container">
           <h1 class="section__title technologie-info__title">Technologie</h1>
 
@@ -589,7 +590,7 @@
       </section>
     </div> 
 
-    <section class="kontaktiere section">
+    <section id="kontakt" class="kontaktiere section">
       <div class="main-container">
         <div class="kontaktiere__wrapper">
           <div class="kontaktiere__block">
@@ -597,43 +598,43 @@
             <h4 class="section__subtitle">
               Equitron-pro wirkt auf zellulärer Ebene und hat einen direkten und positiven Einfluss auf die Genexpression des Körpers. zum Beispiel  geschlossen wird und der Bruch wieder heilt. 
             </h4>
-            <div class="btn-wrapper">
+            <a href="#" class="btn-wrapper">
               <button class="modal-btn button">KONTAKT</button>
-            </div>
+            </a>
           </div>
   
-          <div class="form-wrapper">
-            <form action="#" class="contact-form bottom-form">
-              <div class="contact-form__wrapper">
-                <h1 class="contact-form__title">
-                  Erfahren Sie mehr
-                </h1>
-                <div class="contact-form__input-group">
-                  <input id="name" type="text" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="name">Name</label>
+          <div id="popup" class="form-container">
+            <div class="form-container__body">
+              <form action="#" class="contact-form top-form">
+                <a href="#" class="contact-form__close">X</a>
+                <div class="contact-form__wrapper">
+                  <h1 class="contact-form__title">
+                    Erfahren Sie mehr
+                  </h1>
+                  <div class="contact-form__input-group">
+                    <input id="name" type="text" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="name">Name</label>
+                  </div>
+                  <div class="contact-form__input-group">
+                    <input id="email" type="email" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="email">Email</label>
+                  </div>
+                  <select class="contact-form__select">
+                    <option selected>Ich interessiere mich als</option>
+                    <option value="first">111</option>
+                    <option value="second">222</option>
+                  </select>
+                  <div class="contact-form__input-group">
+                    <input id="interes" type="text" class="contact-form__input" required>
+                    <span class="contact-form__bar"></span>
+                    <label class="contact-form__label" for="interes">Ich interesse mich für</label>
+                  </div>
+                  <button class="contact-form__button button">Kontakt</button>
                 </div>
-                <div class="contact-form__input-group">
-                  <input id="email" type="email" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="email">Email</label>
-                </div>
-                <select class="contact-form__select">
-                  <option selected>Ich interessiere mich als</option>
-                  <option value="first">111</option>
-                  <option value="second">222</option>
-                </select>
-                <div class="contact-form__input-group">
-                  <input id="interes" type="text" class="contact-form__input" required>
-                  <span class="contact-form__bar"></span>
-                  <label class="contact-form__label" for="interes">Ich interesse mich für</label>
-                </div>
-                <button class="contact-form__button button">Kontakt</button>
-                <p class="contact-form__text">
-                  Weitere Informationen zur Verwendung Ihrer Daten finden Sie in unseren Datenschutzbestimmungen.
-                </p>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
 
