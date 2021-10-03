@@ -54,13 +54,22 @@ $(function(){
   $('.slider__slider-block').slick({
     infinite: true,
     nextArrow: nextArrow, 
-    prevArrow: prevArrow
+    prevArrow: prevArrow, 
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   })
 
   $('.product__card-slider').slick({
     infinite: true,
-    autoplay: true,
+    autoplay: true, 
     nextArrow: false, 
-    prevArrow: false
+    prevArrow: false,
   })
 })

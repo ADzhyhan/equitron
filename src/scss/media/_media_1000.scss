@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
   .header__header-wrapper {
     height: 80px;
     z-index: 1;
@@ -18,7 +18,7 @@
       right: 0;
       background-color: #744825;
       // background-color: #3d4828;
-      opacity: 0.9;
+
       text-align: center;
       transform: translateY(-520px);
       transition: all .5s;
@@ -62,6 +62,10 @@
   
   .social__item {
     padding-right: 75px;
+  }
+
+  .social__item + .social__item:last-child {
+    padding-right: 0;
   }
 
   .content {
@@ -282,7 +286,7 @@
       align-items: center;
     } 
 
-    &__title {
+    &__list-title {
       font-family: $ffp-black;
       @include fwfslh(900, 30px, 18px);
       color: $blue;

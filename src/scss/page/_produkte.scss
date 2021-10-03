@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-position: bottom left;
 
+  &__top-title {
+    padding-bottom: 40px;
+  }
+
   &__container {
     img {
       @include wh(100%, 100%);

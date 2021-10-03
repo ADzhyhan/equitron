@@ -7,6 +7,9 @@
   max-width: 1920px;
   min-height: 990px;
 
+  &__title {
+    padding-bottom: 30px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;

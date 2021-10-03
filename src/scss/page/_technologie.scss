@@ -5,22 +5,23 @@
     padding-bottom: 40px;
   }
 
+  &__titles {
+    width: 50%;
+  }
+
   &__subtitle {
     padding-bottom: 40px;
   }
 
-  &__content {
+  &__info {
+    // width: 50%;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__info {
-    width: 50%;
+    align-items: center;
 
     &-text {
       font-family: $ffa; 
       @include fwfslh(500, 18px, 25px);
-
     }
   }
 
@@ -44,4 +45,7 @@
       padding-right: 20px;
     }
   }
+}
+.text--mob {
+  display: none;
 }

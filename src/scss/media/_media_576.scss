@@ -7,15 +7,21 @@
     &__header-wrapper {
       height: 50px;
     }
+  }
 
-    .social {
-      &__item {
-        padding-right: 55px;
-      }
+  .social {
+    &__item {
+      padding-right: 55px;
+    }
 
-      &__link {
-        font-size: 14px;
+    &__item + &__item {
+      &:last-child {
+        padding-right: 0;
       }
+    }
+
+    &__link {
+      font-size: 14px;
     }
   }
 
@@ -35,7 +41,7 @@
 
     &__link {
       padding: 10px 0;
-      @include fwfslh(500, 15px, 15px);
+      @include fwfslh(500, 15px, 13px);
     }
   }
 
@@ -79,6 +85,199 @@
       margin-top: 0;
       height: 37px;
       font-size: 13px;
+    }
+  }
+
+  .features {
+    padding-top: 50px;
+
+    .product {
+      &__item {
+        width: 235px;
+      }
+
+      &__card {
+        &-img {
+          width: 117px;
+          margin-left: 54px;
+        }
+
+        &-title {
+          @include fwfslh(900, 11px, 12px);
+          padding-bottom: 8px;
+        }
+
+        &-text {
+          @include fwfslh(500, 11px, 13px);
+          padding-bottom: 13px;
+        }
+      }
+    }
+  }
+
+  .section {
+    &__header {
+      padding-bottom: 28px;
+    }
+
+    &__title {
+      @include fwfslh(900, 45px, 55px); 
+    }
+
+    &__subtitle {
+      @include fwfslh(900, 17px, 19px); 
+    } 
+
+    &__header-text {
+      width: 93%;
+    }
+
+    &__text {
+      @include fwfslh(500, 14px, 19px);
+    }
+  }
+
+  .anwendungen {
+    padding: 40px 0 55px 0;
+
+    &__title {
+      padding-bottom: 45px;
+    }
+
+    &__item {
+      width: 25%;
+
+      &-img {
+        width: 50px;
+        height: 50px;
+      }
+
+      &-title {
+        @include fwfslh(900, 11px, 13px);
+        padding: 10px 0;
+      }
+
+      &-text {
+        @include fwfslh(500, 11px, 13px); 
+      }
+    }
+  }
+
+  .technologie {
+    padding-top: 55px;
+    &__subtitle {
+      padding-bottom: 15px;
+    }
+
+    &__info {
+      &-text {
+        @include fwfslh(500, 14px, 20px);
+      }
+    }
+
+    &__img {
+      width: 240px;
+      height: 290px;
+    }
+
+    &__item {
+      width: 31%;
+      &-dash {
+        padding-right: 7px;
+      }
+    }
+  } 
+
+  .produkte {
+    padding-top: 45px; 
+    &__container {
+      width: 270px;
+    }
+
+    &__top-title {
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__list {
+      padding: 15px 0 22px 0;
+      &-item {
+        @include fwfslh(900, 14px, 13px);
+        padding-bottom: 9px;
+      }
+    }
+
+    &__button {
+      width: 55%;
+      height: 37px;
+      font-size: 12px;
+    }
+  }
+
+  .technologie-horse {
+    padding-top: 60px;
+
+    &__list-title {
+      padding-bottom: 10px;
+      font-size: 25px;
+    }
+
+    &__list-item {
+      @include fwfslh(900, 15px, 12px);
+      padding-bottom: 13px;
+    }
+  }
+
+  .slider {
+    padding: 65px 0;
+    &__title {
+      @include fwfslh(900, 43px, 42px);
+    }
+
+    &__arrows {
+      padding-top: 25px;
+    }
+
+    &__arrow {
+      font-size: 30px;
+      width: 55px;
+      height: 55px;
+    }
+
+    &__item {
+      &-text {
+        @include fwfslh(900, 16px, 20px);
+        padding-bottom: 19px;
+      }
+
+      &-name {
+        @include fwfslh(900, 17px, 21px);
+      }
+    }
+  }
+
+  .technologie-info {
+    padding: 45px 0;
+    &__title {
+      padding-bottom: 45px;
+    }
+  }
+
+  .kontaktiere {
+    padding-top: 65px;
+    &__title {
+      padding-bottom: 15px;
+    }
+
+    .section__title {
+      @include fwfslh(900, 45px, 55px); 
+    }
+
+    .modal-btn {
+      margin-top: 25px;
     }
   }
 }

@@ -1,0 +1,112 @@
+@media (max-width: 320px) {
+  .header {
+    .content {
+      &__title {
+        @include fwfslh(900, 41px, 45px);
+        padding-bottom: 10px;
+      } 
+  
+      &__text {
+        @include fwfslh(500, 16px, 18px);
+      }
+    }
+  }
+
+  .benefits {
+    margin-top: 50px; 
+
+    &-item {
+      width: 5%;
+    }
+  }
+
+  .section {
+    &__title {
+      @include fwfslh(900, 40px, 45px);
+    }
+
+    &__subtitle {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 17px; 
+    }
+  } 
+
+  .technologie {
+    &__info-text {
+      @include fwfslh(500, 13px, 18px);
+    }
+
+    &__img {
+      width: 145px;
+      height: 145px;
+    } 
+  } 
+
+  .produkte {
+    &__container {
+      width: 300px;
+    } 
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__list-item {
+      font-size: 15px;
+    }
+
+    &__button {
+      height: 37px;
+      font-size: 12px;
+    }
+  } 
+
+  .technologie-horse {
+    &__title {
+      font-size: 24px;
+    } 
+
+    &__list-item {
+      @include fwfslh(900, 15px, 15px);
+      padding-bottom: 8px;
+    }
+  } 
+
+  .slider {
+    &__title {
+      @include fwfslh(900, 40px, 40px);
+    }
+
+    &__arrows {
+      padding-top: 20px;
+    }
+
+    &__arrow {
+      font-size: 25px;
+      width: 50px;
+    }
+
+    &__item {
+      &-text {
+        @include fwfslh(900, 17px, 20px);
+      }
+    }
+  }
+
+  .kontaktiere {
+    .section__title {
+      @include fwfslh(900, 40px, 45px);
+    }
+  } 
+
+  .social__item {
+    padding-right: 30px;
+  } 
+
+  .footer {
+    .copyright__text {
+      @include fwfslh(400, 10px, 10px);
+    }
+  }
+}
