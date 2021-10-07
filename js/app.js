@@ -7,7 +7,7 @@ const prevArrow = document.querySelector('.icon-left-arrow');
 const menuBtn = document.querySelector('.navigation__btn');
 const navList = document.querySelector('.navigation__list');
 
-
+//card template
 const card =
 `
   <div class="product__card">
@@ -24,7 +24,8 @@ const card =
       </p>
     </div>
   </div>
-`
+` 
+//events for eyes on the product
 eye1.addEventListener('mouseover', (e) => {
   cardWrapper.insertAdjacentHTML('afterbegin', card);
 }) 
@@ -50,6 +51,7 @@ menuBtn.addEventListener('click', (e) => {
   navList.classList.toggle('navigation__list--active');
 })
 
+//reviews slider
 $(function(){
   $('.slider__slider-block').slick({
     infinite: true,
@@ -66,6 +68,7 @@ $(function(){
     ]
   })
 
+  //mobile slider in the features section
   $('.product__card-slider').slick({
     infinite: true,
     autoplay: true, 
